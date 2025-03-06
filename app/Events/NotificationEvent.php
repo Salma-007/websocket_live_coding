@@ -26,4 +26,11 @@ class NotificationEvent implements ShouldBroadcastNow
     {
         return new Channel('notifications');
     }
+
+    public function broadcastWith(): array
+    {
+        return [
+            'message' => " New Notification Received : {$this->message}",
+        ];
+    }
 }

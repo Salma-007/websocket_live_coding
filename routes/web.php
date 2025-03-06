@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Events\NotificationEvent;
 use App\Http\Controllers\NotificationController;
-use App\Events\SimpleNotification;
+// use App\Events\SimpleNotification;
 use Illuminate\Http\Request;
 use App\Events\RealTimeNotification;
 
